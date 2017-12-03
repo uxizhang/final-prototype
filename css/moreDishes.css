@@ -1,0 +1,195 @@
+body{
+  background: #e0e0e0;
+}
+
+#subNav .navbar-toggler {
+  font-size: 16px;
+  padding: 11px;
+  color: white;
+}
+
+#subNav .navbar-brand {
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#subNav a {
+  color: white;
+  font-size: 1.25rem;
+}
+
+#subNav .navbar-nav .nav-item {
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+
+#subNav .navbar-nav .nav-item:hover {
+  color: fade(white, 80%);
+  outline: none;
+  background-color: transparent;
+}
+
+#subNav .navbar-nav .nav-item:active, #subNav .navbar-nav .nav-item:focus {
+  outline: none;
+  background-color: transparent;
+}
+
+@media (min-width:0px){
+  #subNav{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    -webkit-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+    -moz-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+    transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+    letter-spacing: 1px;
+    background: #d32323;
+  }
+  #subNav .nav-link.active {
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  #subNav .nav-link.active:hover {
+    color: white;
+  }
+}
+
+/*bigger screen size*/
+
+@media screen and (min-width:500px){
+  #dishList{
+    padding-top: 85px;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    overflow: hidden;
+  }
+
+  .dishTray{
+  background: white;
+  width: 31%;
+  height: 39vw;
+  margin: 1vw;
+  border-radius: 2vw;
+  overflow: hidden;
+  float: left;
+  }
+
+  .imgbox{
+    background-size: cover;
+    background-position: center;
+    width: 31vw;
+    height: 25vw;
+    overflow: hidden;
+    float: left;
+  }
+
+  .dishInfo{
+    float: left;
+    height: 14vw;
+    width: 31vw;
+  }
+
+  .dishName{
+    width: 100%;
+  float: left;
+  font-weight: 600;
+  font-size: 2.1vw;
+  padding:2vw 2vw;
+  }
+
+  .rateSystem{
+    float: right;
+    font-size: 3.5vw;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0vw 3vw 0vw 3vw;
+  }
+
+  .number{
+    float: left;
+    padding-right: 2pt;
+  }
+
+  .heart{
+    float: left;
+    height:5vw;
+  }
+}
+
+/*mobile size*/
+@media screen and (max-width: 500px) {
+#dishList{
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+
+.dishTray{
+background: white;
+width: 47vw;
+height: 60vw;
+margin: 1vw;
+border-radius: 2vw;
+overflow: hidden;
+float: left;
+}
+
+.imgbox{
+  background-size: cover;
+  background-position: center;
+  width: 47vw;
+  height: 40vw;
+  overflow: hidden;
+  float: left;
+}
+
+.dishInfo{
+  float: left;
+  height: 20vw;
+  width: 47vw;
+}
+
+.dishName{
+  width: 100%;
+float: left;
+font-weight: 600;
+font-size: 3vw;
+padding:2vw 3vw;
+}
+
+.rateSystem{
+  float: right;
+  font-size: 5vw;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0vw 5vw 0vw 3vw;
+}
+
+.number{
+  float: left;
+  padding-right: 2pt;
+}
+
+.heart{
+  float: left;
+  height:8vw;
+}
+}
+
+/*class used in js*/
+.like{
+  background-image: url("../img/liked.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.unlike{
+  background-image: url("../img/unliked.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
